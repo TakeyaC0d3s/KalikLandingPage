@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="kalikimages/CBlogo.png" class="logo"></a>
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>“The Beer of the Bahamas”</h2>
+                    <p>Kalik, like Junkanoo, has become intrinsically bound to Bahamian culture.
+                        It is indeed "The Beer of The Bahamas." Commonwealth Brewery Limited launched 
+                        Kalik in 1988. The brand’s name was derived from the “Kalik, Kalikin’ kalik”
+                        sound of the cowbell instrument used in Junkanoo – the Bahamas most important
+                        and largest cultural event and also a pulsating, uniquely Bahamian genre of music
+                         that has helped put The Bahamas on the map.</p>
+                        <br>
+                    <p>Kalik, The Beer of the Bahamas is a beer brand franchise comprised of Kalik,
+                        Kalik Light & Kalik Light Platinum, Kalik Gold, Kalik Lime and 2014's addition of the Kalik Raddler .</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div class="imgBox">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide"><img src="kalikimages/kalik.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/sz1_r3uHDL.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/sz1_Q9tGoL.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/sz1_QlZhNH.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/sz1_sJAqgy.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/kalik_radler.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/kalik_lime.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/sz1_Rk8puB.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/sz1_brRijS.png" class="bottle"></div>
+                           <div class="swiper-slide"><img src="kalikimages/sz1_Q9tGoL.png" class="bottle"></div>
+                        </div>
+                        <!--<div class="swiper-pagination"></div>-->
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/profile.php?id=100004591068282"><img src="kalikimages/facebook.png" class="logo"></a></li>
+                <li><a href="https://www.linkedin.com/company/commonwealth-brewery-ltd"><img src="kalikimages/linkedin.png" class="logo"></a></li>
+                <li><a href="mailto:yourEmail@domain.com"><img src="kalikimages/mail-512.png" class="logo"></a></li>
+                <li><a href="#"><img src="kalikimages/twitter-logo-large.png" class="logo"></a></li>
+            </ul>
+        </section>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+           var swiper = new Swiper('.swiper-container', {
+           effect: 'coverflow',
+           grabCursor: true,
+           centeredSlides: true,
+           slidesPerView: 'auto',
+           coverflowEffect: {
+           rotate: 0,
+           stretch: 0,
+           depth: 200,
+           modifier: 4,
+           slideShadows: true,
+           },
+          pagination: {
+          el: '.swiper-pagination',
+           },
+          });
+
+          function toggleMenu(){
+              const menuToggle = document.querySelector('.toggle');
+              const navigation = document.querySelector('.navigation');
+              menuToggle.classList.toggle('active')
+              navigation.classList.toggle('active')
+          }
+        </script>
+    </body>
+
+</html>
